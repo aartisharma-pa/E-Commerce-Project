@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <!--<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="/Home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/registration">Singup</a>
+    </li>
+  </ul> -->
+
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active"  data-toggle="tab" href="#Customer-form" aria-selected="true">Customer</a>
+      <a class="nav-item nav-link"  data-toggle="tab" href="#Merchant-form" aria-selected="false">Merchant</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div id="Customer-form" class="tab-pane fade show active" role="tabpanel">
+      <form action="/sign_up" method="POST">
+            
+        Full Name:<br>
+        <input class="form-control" type="text" name="name" id="name" pattern="[A-Za-z]{}"
+        placeholder="Full Name" required />
+                
+        E-mail:<br>
+        <input class="form-control" type="email" name="email" id="email"
+        placeholder="E-Mail " required />
+                
+        Password:<br>
+        <input class="form-control" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        id="password" placeholder="Password " required/>
+                
+        Mobile:<br>
+        <input class="form-control" type="text" pattern="[789][0-9]{9}" name="phone" id="phone"
+        placeholder="Phone Number " required/>
+    
+        Address:<br><input class="form-control" type="text"  name="address" id="address"
+        placeholder="House Number " required/>
+    
+        Address2:<br>
+        <input class="form-control" type="text"  name="address1" id="address1"
+        placeholder="Locality,Street or Area" required/>
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </a>Existing User?<a href="/">Login</a>
+        </form>
+    </div>
+
+
+    <div id="Merchant-form" class="tab-pane fade"  role="tabpanel">
+      <form action="/sign_up" method="POST">
+            
+        Full Name:<br>
+        <input class="form-control" type="text" name="name" id="name" pattern="[A-Za-z]{}"
+        placeholder="Full Name" required />
+                
+        E-mail:<br>
+        <input class="form-control" type="email" name="email" id="email"
+        placeholder="E-Mail " required />
+                
+        Password:<br>
+        <input class="form-control" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        id="password" placeholder="Password " required/>
+                
+        Mobile:<br>
+        <input class="form-control" type="text" pattern="[789][0-9]{9}" name="phone" id="phone"
+        placeholder="Phone Number " required/>
+    
+        Full Address:<br><input class="form-control" type="text"  name="address" id="address"
+        placeholder="House Number,Locality or Area." required/>
+    
+        Organization Name:<br>
+        <input class="form-control" type="text"  name="orgname" id="address1"
+        placeholder="Nike,LV etc." required/>
+    
+        Designation:<br>
+        <input class="form-control" type="text"  name="Designation" id="address1"
+        placeholder="HR, Manager etc." required/>
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </a>Existing User?<a href="/">Login</a>
+        </form>
+    </div>
+  </div>
+</body>
+</html>

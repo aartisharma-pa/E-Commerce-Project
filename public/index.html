@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lan="en"> 
+<head> 
+
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Login/Signup Form</title> 
+		
+<link rel="stylesheet" href="style.css"> 
+		
+</head> 
+
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="/Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/registration">Singup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
+        </li>
+      </ul> 
+
+    <form action="/login">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter valid mail.">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPhone">Mobile No.</label>
+            <input type="text" pattern="[789][0-9]{9}" class="form-control"  id="exampleInputPhone" placeholder="Enter Mobile No.">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button> Dont have account?<a href="/registration">Register</a>
+       
+      </form>
+	
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body> 
+</html>	 
